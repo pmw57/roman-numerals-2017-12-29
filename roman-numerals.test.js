@@ -10,4 +10,7 @@
     test("no input gives an empty string", function () {
         expect(convert()).toBe("");
     });
+    test("0 gives an empty string", function () {
+        expect(convert(0)).toBe("");
+    });
 }());
