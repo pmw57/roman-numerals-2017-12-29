@@ -19,4 +19,7 @@
     test("2 converts to II", function () {
         expect(convert(2)).toBe("II");
     });
+    test("3 converts to III", function () {
+        expect(convert(3)).toBe("III");
+    });
 }());

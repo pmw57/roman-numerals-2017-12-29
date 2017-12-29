@@ -7,7 +7,10 @@ module.exports = (function iife() {
         if (n === 1) {
             return "I";
         }
-        return "II";
+        if (n === 2) {
+            return "II";
+        }
+        return "III";
     }
     return {
         convert
