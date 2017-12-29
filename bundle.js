@@ -14,23 +14,18 @@ module.exports = (function iife() {
             [10, "X"],
             [9, "IX"],
             [5, "V"],
-            [4, "IV"]
+            [4, "IV"],
+            [1, "I"]
         ];
         if (!n || n < 1) {
             return "";
         }
-        if (n >= 9) {
-            return CONVERSION_FACTORS.find(function ([arabic, ignore]) {
-                return (arabic <= n);
-            }).pop();
-        }
-        if (n === 5) {
-            return CONVERSION_FACTORS[2][1];
-        }
-        if (n === 4) {
-            return CONVERSION_FACTORS[3][1];
-        }
-        return convert(n - 1) + "I";
+        return CONVERSION_FACTORS.find(function ([arabic, ignore]) {
+            if (arabic <= n) {
+                n -= arabic;
+                return true;
+            }
+        }).pop() + convert(n);
     }
     return {
         convert
