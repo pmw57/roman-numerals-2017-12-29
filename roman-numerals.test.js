@@ -7,4 +7,7 @@
     test("function exists", function () {
         expect(convert).not.toBeUndefined();
     });
+    test("no input gives an empty string", function () {
+        expect(convert()).toBe("");
+    });
 }());
