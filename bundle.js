@@ -13,13 +13,7 @@ module.exports = (function iife() {
         if (!n || n < 1) {
             return "";
         }
-        if (n === 1) {
-            return "I";
-        }
-        if (n === 2) {
-            return "II";
-        }
-        return "III";
+        return convert(n - 1) + "I";
     }
     return {
         convert
