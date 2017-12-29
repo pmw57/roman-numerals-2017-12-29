@@ -1,0 +1,33 @@
+{
+  "name": "roman-numerals-2017-12-29",
+  "version": "1.0.0",
+  "description": "Roman Numerals kata",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watch",
+    "build": "watchify index.js -o bundle.js",
+    "start": "watch-http-server -s",
+    "watch": "run-p test build start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmw57/roman-numerals-2017-12-29.git"
+  },
+  "keywords": [
+    "roman",
+    "numerals",
+    "kata"
+  ],
+  "author": "Paul Wilkins",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pmw57/roman-numerals-2017-12-29/issues"
+  },
+  "homepage": "https://github.com/pmw57/roman-numerals-2017-12-29#readme",
+  "devDependencies": {
+    "jest": "^22.0.4",
+    "npm-run-all": "^4.1.2",
+    "watch-http-server": "^0.7.6",
+    "watchify": "^3.9.0"
+  }
+}
