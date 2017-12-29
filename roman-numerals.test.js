@@ -14,7 +14,8 @@
         [1, "I"],
         [2, "II"],
         [3, "III"],
-        [4, "IV"]
+        [4, "IV"],
+        [5, "V"]
     ];
     convertedValues.forEach(function ([arabic, roman]) {
         test(`${arabic} converts to ${roman}`, function () {

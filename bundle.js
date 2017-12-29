@@ -16,6 +16,9 @@ module.exports = (function iife() {
         if (n === 4) {
             return "IV";
         }
+        if (n === 5) {
+            return "V";
+        }
         return convert(n - 1) + "I";
     }
     return {
