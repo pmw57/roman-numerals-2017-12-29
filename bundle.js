@@ -9,8 +9,11 @@ results.innerHTML = numbers.map(romanNumerals.convert)
 },{"./roman-numerals.js":2}],2:[function(require,module,exports){
 module.exports = (function iife() {
     "use strict";
-    function convert() {
-        return "";
+    function convert(n) {
+        if (!n || n < 1) {
+            return "";
+        }
+        return "I";
     }
     return {
         convert

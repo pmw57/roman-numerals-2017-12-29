@@ -13,4 +13,7 @@
     test("0 gives an empty string", function () {
         expect(convert(0)).toBe("");
     });
+    test("1 converts to I", function () {
+        expect(convert(1)).toBe("I");
+    });
 }());
