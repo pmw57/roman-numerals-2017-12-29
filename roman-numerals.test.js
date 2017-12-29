@@ -27,7 +27,9 @@
         [100, "C"],
         [400, "CD"],
         [500, "D"],
-        [1000, "M"]
+        [900, "CM"],
+        [1000, "M"],
+        [1999, "MCMXCIX"]
     ];
     convertedValues.forEach(function ([arabic, roman]) {
         test(`${arabic} converts to ${roman}`, function () {
