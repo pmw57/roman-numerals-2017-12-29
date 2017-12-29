@@ -16,4 +16,7 @@
     test("1 converts to I", function () {
         expect(convert(1)).toBe("I");
     });
+    test("2 converts to II", function () {
+        expect(convert(2)).toBe("II");
+    });
 }());

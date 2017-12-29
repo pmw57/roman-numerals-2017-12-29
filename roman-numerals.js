@@ -4,7 +4,10 @@ module.exports = (function iife() {
         if (!n || n < 1) {
             return "";
         }
-        return "I";
+        if (n === 1) {
+            return "I";
+        }
+        return "II";
     }
     return {
         convert
