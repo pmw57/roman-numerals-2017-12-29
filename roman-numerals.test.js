@@ -10,16 +10,15 @@
     test("no input gives an empty string", function () {
         expect(convert()).toBe("");
     });
-    test("0 gives an empty string", function () {
-        expect(convert(0)).toBe("");
-    });
-    test("1 converts to I", function () {
-        expect(convert(1)).toBe("I");
-    });
-    test("2 converts to II", function () {
-        expect(convert(2)).toBe("II");
-    });
-    test("3 converts to III", function () {
-        expect(convert(3)).toBe("III");
+    let convertedValues = [
+        [1, "I"],
+        [2, "II"],
+        [3, "III"],
+        [4, "IV"]
+    ];
+    convertedValues.forEach(function ([arabic, roman]) {
+        test(`${arabic} converts to ${roman}`, function () {
+            expect(convert(arabic)).toBe(roman);
+        });
     });
 }());
